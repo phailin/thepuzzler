@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ThePuzzler</string>
+    <string name="action_settings">Settings</string>
+    <string name="app_title">The Puzzler</string>
+    <string name="play">Play</string>
+    <string name="high_scores">Statistics</string>
+    <string name="help">Instructions</string>
+    <string name="about">About</string>
+    <string name="logo_desc">The Puzzler Logo</string>
+    <string name="level_bg">Background for levels</string>
+    <string name="title_bar_text">The Puzzler App</string>
+    <string name="title_activity_stats">StatsActivity</string>
+    <string name="hello_world">Hello world!</string>
+    
+    <string name="about_text"><![CDATA[<p>The Puzzler is an interesting collections of popular puzzles and riddles.
+Solving them will be a funny yet intellectual drive for you. <br /><br />
+More on the app can be found at http://netrananda.com/thepuzzler.Have fun!!</p>]]></string>
+	
+     <string name="instructions_text"><![CDATA[<p>Each level contains 10 puzzles. A right answer awards you 10 points.
+Every answer is just a single word.To assist you in solving the puzzle, there are two type of hint.<br />
+<i>Hint 1</i> is logical. Viewing it deducts 2 points from your score. <br />
+<i>Hint 2</i> reveals some of the letters from the answer word. Viewing it deducts 3 points. <br />
+If you are desparate to know the answer for a puzzles/riddles that you could not solve, there is an option
+to view it. However we encouarge you to excercise your brain a bit before giving up.<br />
+
+Have fun testing your IQ!!</p>]]></string>
+
+</resources>

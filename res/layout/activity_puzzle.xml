@@ -1,0 +1,97 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:background="@drawable/bg_main_activity"
+	    android:layout_gravity="center"	    
+	    android:layout_weight="1"
+	    android:stretchColumns="*" >
+		
+	    <TableRow android:gravity="center"
+	        android:layout_marginTop="20dp">		
+	        
+	         <Button android:id="@+id/btn_prev_puz"
+	            android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:background="@drawable/ic_navigation_previous_item"	 />	    
+			   
+	       <ScrollView android:layout_width="wrap_content"
+	           	android:layout_height="220dp"        		
+        		android:layout_span="3"         		  		        		    		
+        		android:background="@drawable/puzzle_background">
+	         
+	           <!-- this linearlayout is rquired for the center_vertical to work below -->
+	           <LinearLayout android:layout_width="match_parent"
+	           		android:layout_height="wrap_content" > 	           	
+						<TextView android:id="@+id/tv_puz_content"
+							android:layout_width="160dp"
+							android:layout_marginRight="4dp"
+							android:layout_marginLeft="4dp"								
+						    android:layout_height="220dp"			   	   
+						    android:fontFamily="sans-serif-light"
+						    android:textStyle="italic"			    
+						    android:textSize="20sp"			   
+						    android:textColor="#FFFFFF" 
+						    android:inputType="textMultiLine"
+			        		android:scrollbars="vertical" 			    
+			   				android:text="" 
+							android:gravity="center_vertical"/>
+				</LinearLayout>
+			</ScrollView>
+			
+			<Button android:id="@+id/btn_next_puz" 
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:background="@drawable/ic_navigation_next_item" />
+			    
+		</TableRow>
+		
+		<TableRow android:gravity="center">
+
+			<EditText
+			    android:id="@+id/te_puz_ans"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_marginTop="10dp"
+			    android:layout_span="3"
+			    android:ems="10"
+			    android:singleLine="true"
+			    android:imeOptions="actionGo"			    		   
+			    android:hint="Answer"
+			    android:inputType="text" 
+ 				android:digits="qwertzuiopasdfghjklyxcvbnm_-"
+ 				android:maxLength="15" />
+ 
+	    </TableRow>
+	    
+		<TableRow android:gravity="center">	
+		    
+		    <Button android:id="@+id/btn_hint"
+			    android:layout_width="60dp"
+			    android:layout_height="wrap_content"
+			    android:textStyle="bold"
+			    android:hint="Hint 1"  />
+	    	
+			<Button android:id="@+id/btn_hint_letters"
+			    android:layout_width="60dp"
+			    android:layout_height="wrap_content"
+			    android:textStyle="bold"
+			    android:hint="Hint 2"  />	    
+			    
+			<Button android:id="@+id/btn_check"
+			    android:layout_width="60dp"
+			    android:textStyle="bold"
+			    android:layout_height="wrap_content"
+			    android:hint="Check"  />  		
+			
+	    </TableRow>
+	     <TableRow android:gravity="center">	
+	        <Button android:id="@+id/btn_ans"
+			    android:layout_width="45dp"
+			    android:layout_height="45dp"
+			    android:textStyle="bold"
+			    android:textColor="#FFFFFF"
+			    android:text="ANS"
+			    android:background="@drawable/ic_star"			    
+			    android:hint="ANS"  />
+	    </TableRow>
+	</TableLayout>

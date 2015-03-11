@@ -1,0 +1,93 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_gravity="center"
+	    android:background="@drawable/bg_main_activity"	   
+	    android:layout_weight="1"
+	    android:stretchColumns="*" >
+		
+	    <TableRow android:gravity="center" 
+	        android:layout_marginTop="10dp"  >		
+	        
+	         <Button android:id="@+id/btn_prev_puz"
+	            android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:background="@drawable/ic_navigation_previous_item"	 />	    
+			   
+	        <ScrollView android:layout_height="120dp"
+        		android:layout_width="380dp"
+        		android:background="@drawable/puzzle_background"
+        		android:layout_span="3">
+			<TextView android:id="@+id/tv_puz_content"
+				android:layout_width="match_parent"
+			    android:layout_height="120dp"			   
+			    android:fontFamily="sans-serif-light"
+			    android:textStyle="italic"
+			    android:layout_margin="4dp"
+			    android:textSize="20sp"
+			    
+			    android:textColor="#FFFFFF" 
+			    android:inputType="textMultiLine"
+        		android:scrollbars="vertical"        				    
+			    android:text="" />
+			</ScrollView>
+			<Button android:id="@+id/btn_next_puz" 
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:background="@drawable/ic_navigation_next_item" />
+			    
+		</TableRow>
+		
+		<TableRow android:gravity="center">
+
+			<EditText
+			    android:id="@+id/te_puz_ans"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_marginTop="10dp"
+			    android:layout_span="3"
+			    android:ems="10"
+			    android:singleLine="true"
+			    android:imeOptions="actionGo"			    		   
+			    android:hint="Answer"
+			    android:inputType="text" 
+ 				android:digits="qwertzuiopasdfghjklyxcvbnm_-"
+ 				android:maxLength="15" >
+
+			   
+			</EditText>
+ 
+	    </TableRow>
+	    
+		<TableRow android:gravity="center">	
+		    
+		    <Button android:id="@+id/btn_hint"
+			    android:layout_width="60dp"
+			    android:layout_height="wrap_content"
+			    android:textStyle="bold"
+			    android:hint="Hint 1"  />
+	    	
+			<Button android:id="@+id/btn_hint_letters"
+			    android:layout_width="60dp"
+			    android:layout_height="wrap_content"
+			    android:textStyle="bold"
+			    android:hint="Hint 2"  />	    
+			    
+			<Button android:id="@+id/btn_check"
+			    android:layout_width="60dp"
+			    android:textStyle="bold"
+			    android:layout_height="wrap_content"
+			    android:hint="Check" />  		
+			
+	    </TableRow>
+	    <TableRow android:gravity="center">	
+	        <Button android:id="@+id/btn_ans"
+			    android:layout_width="48dp"
+			    android:layout_height="48dp"
+			    android:textStyle="bold"			   
+			    android:background="@drawable/ic_star"
+			    android:textColor="#FFFFFF"
+			    android:text="ANS"
+			    android:hint="ANS"  />
+	    </TableRow>
+</TableLayout>

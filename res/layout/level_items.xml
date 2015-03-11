@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+    <TableLayout android:id="@+id/table_layout"        	    
+        	    android:layout_marginTop="20dp"
+        	    android:layout_marginBottom="20dp"
+        	    android:layout_marginLeft="20dp"
+        	    android:layout_marginRight="20dp"
+        	    android:layout_height="wrap_content"  
+		   		android:layout_width="wrap_content" 
+    			android:layout_gravity="center"
+    			android:stretchColumns="*" >
+		
+	       		<TableRow>         
+			    	<TextView android:id="@+id/id_level" 
+			    	    android:textStyle="bold"  
+			            android:typeface="serif"  
+			            android:textSize="18sp"  
+			            android:text="Level "  
+			            android:layout_gravity="center"
+			            android:layout_margin="5dp"
+			            android:layout_span="2"/>  
+			    </TableRow>
+			    
+	       		 <TableRow>
+			    	<TextView android:id="@+id/tv_lvl_solved" 
+			            android:textStyle="bold"  
+			            android:typeface="serif"  
+			            android:textSize="18sp"  
+			            android:text="Solved: "
+			             android:layout_margin="5dp" 
+			            android:gravity="center"/>
+			    	<TextView android:id="@+id/tv_lvl_score" 
+			            android:textStyle="bold"  
+			            android:typeface="serif"  
+			            android:textSize="18sp"  
+			            android:text="Score: "
+			            android:layout_margin="5dp"  
+			            android:gravity="center"/> 
+			    </TableRow>
+			    
+			    <TableRow>	
+			        <RelativeLayout android:layout_width="match_parent"
+   						 android:layout_height="match_parent"
+   						 android:padding="0dp" 
+   						 android:layout_span="2" 
+   						 android:layout_gravity="center" >	
+   						 	    	
+				    	<ProgressBar
+					        android:id="@+id/lvl_progress_bar"
+					        style="?android:attr/progressBarStyleHorizontal"
+					        android:layout_width="match_parent"
+					        android:layout_height="match_parent"
+					        android:layout_centerInParent="true" 
+					        android:layout_margin="5dp" 
+					        android:indeterminate="false"
+					        android:max="10"
+					        android:minHeight="20dp"					       				        
+					        android:progress="0" />
+				    	<TextView
+					        android:id="@+id/lvl_tv_percent"
+					        android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					       	android:layout_centerInParent="true" 
+					        android:textStyle="bold" />
+				    </RelativeLayout>
+			    	
+				</TableRow>			    
+			    <TableRow android:gravity="center">
+			        <Button android:id="@+id/btn_start"
+			            android:text="Start"
+			            android:textStyle="bold"
+			            android:layout_span="1" 
+			            android:gravity="center"			            
+			            android:layout_width="wrap_content"			            
+			            android:layout_margin="5dp"/>
+			    </TableRow>	
+		     </TableLayout>
+</LinearLayout>
