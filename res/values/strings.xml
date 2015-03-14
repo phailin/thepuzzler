@@ -10,8 +10,7 @@
     <string name="about">About</string>
     <string name="logo_desc">The Puzzler Logo</string>
     <string name="level_bg">Background for levels</string>
-    <string name="title_bar_text">The Puzzler App</string>
-    <string name="title_activity_stats">StatsActivity</string>
+    <string name="title_bar_text">The Puzzler App</string>   
     <string name="hello_world">Hello world!</string>
     
     <string name="about_text"><![CDATA[<p>The Puzzler is an interesting collections of popular puzzles and riddles.
