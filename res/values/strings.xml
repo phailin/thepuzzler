@@ -15,7 +15,8 @@
     
     <string name="about_text"><![CDATA[<p>The Puzzler is an interesting collections of popular puzzles and riddles.
 Solving them will be a funny yet intellectual drive for you. <br /><br />
-More on the app can be found at http://netrananda.com/thepuzzler.Have fun!!</p>]]></string>
+More on the app can be found at <a href="http://netrananda.com/p/the-puzzler.html">http://netrananda.com/p/the-puzzler.html.</a>
+<br />Have fun!!</p>]]></string>
 	
      <string name="instructions_text"><![CDATA[<p>Each level contains 10 puzzles. A right answer awards you 10 points.
 Every answer is just a single word.To assist you in solving the puzzle, there are two type of hint.<br />
